@@ -2,8 +2,8 @@ const input = document.getElementById("number");
 const convertButton = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 
-// let residuum;
-// let outputArray = [];
+let residuum;
+let outputArray = [];
 
 const transform1051 = (
   highArabic,
