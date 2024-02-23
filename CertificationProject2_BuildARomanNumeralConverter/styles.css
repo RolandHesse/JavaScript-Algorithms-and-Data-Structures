@@ -6,21 +6,27 @@
 
 body {
   background-color: #0a0a23;
+  color: #ffffff;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  display: flex;
+  padding: 2rem 0 1rem 0;
   color: #50d156;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-transform: uppercase;
+  width: min(100vw, 450px);
+  text-align: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#converter-box,
 form {
   background-color: white;
   color: #0a0a23;
@@ -28,14 +34,47 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 1rem;
+  font-size: 1.6rem;
+  padding: 2rem 1rem;
+  width: min(100vw, 450px);
 }
 
-#converter-box {
+#output {
+  background-color: white;
+  color: #50d156;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
   width: min(100vw, 450px);
 }
 
 input,
 button {
   width: 80%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #50d156;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  background-color: #4e53f7;
+  border: none;
+}
+
+#impressum {
+  /*margin: 0 0 1rem 0;
+ font-size: 1.1rem;*/
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+}
+
+span {
+  color: grey;
+  font-size: 0.8rem;
 }

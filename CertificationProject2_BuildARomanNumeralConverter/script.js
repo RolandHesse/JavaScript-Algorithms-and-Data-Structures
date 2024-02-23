@@ -77,5 +77,6 @@ convertButton.addEventListener("click", (e) => {
 
     const outputString = outputArray.join("");
     output.textContent = outputString;
+    output.removeAttribute("hidden");
   }
 });
