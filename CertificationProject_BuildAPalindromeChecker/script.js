@@ -1,6 +1,7 @@
 const inputForm = document.getElementById("form");
 const resultDiv = document.getElementById("result");
 
+//confetti-function taken and adapted from https://codepen.io/xxrobot/pen/KZvegB
 function confetti() {
   function random(max) {
     return Math.random() * max;
@@ -20,7 +21,7 @@ function confetti() {
                 background: hsla(" +
       random(360) +
       ",100%,50%,1);\
-                animation: bang 700ms ease-out forwards;\
+                animation: bang 1000ms ease-out forwards;\
                 opacity: 0";
 
     const randomlyStyledConfetti = document.createElement("i");
